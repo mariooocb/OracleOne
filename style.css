@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.main {
+    background: linear-gradient(137deg, rgb(63, 62, 62) 0%, rgba(80, 79, 83, 0.712) 39%, rgba(0, 0, 0, 0.894) 62%);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*DONDE SALE LA PALABRA DESENCRIPTADA O ENCRIPTADA*/
+.Text-Entry {
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    left: 19.9%;
+    top: 15%;
+    border: none;
+    resize: none;
+    background: none;
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
+
+}
+
+/*DIGITE EL TEXTO ACA*/
+textarea::placeholder {
+    color: #02000a;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*SOLO MAYUS Y SIN ACENTO*/
+.conditions {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    left: 19.9%;
+    top: 70%;
+    gap: 8px;
+}
+
+.conditions p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    flex: none;
+}
+
+/*BOTONES*/
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 19.9%;
+    top: 73%;
+
+}
+
+.button-encry {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 15%;
+    background: #363738;
+    border-radius: 24px;
+    border: 1px solid #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+
+.button-encry:hover {
+    background: rgb(141, 151, 160);
+    transform: scale(1.02);
+}
+
+.button-desencry {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 15%;
+    background: #363738;
+    border-radius: 24px;
+    border: 1px solid #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+    color: #000000;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.button-desencry:hover {
+    background: rgb(141, 151, 160);
+    transform: scale(1.02);
+}
+
+.EncryText {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    left: 60%;
+    top: 10%;
+    background: #818183; box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.EncryText img {
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    top: 15%;
+}
+
+.EncryMsg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    text-align: center;
+}
+
+
+.EncryMsg h2 {
+    width: 60%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.EncryMsg p {
+    width: 80%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Text_OutDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+}
+
+/*PRINT DE LAS PALABRAS*/
+.Text-Out {
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    width: 75%;
+    top: -295%;
+    color: #000000;
+    display: none;
+    resize: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+/*BOTON DE COPIAR*/
+.buttons_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2% 0;
+    position: absolute;
+    width: 90%;
+    left: 25%;
+    top: 80%;
+}
+
+.copyButton {
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
+    gap: 8px;
+    width: 50%;
+    background: #363738;
+    border-radius: 20px;
+    border-radius: 24px;
+    border: 1px solid #ffffff;
+    margin: 5px 0 0 13px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 7px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.5s all;
+    cursor:pointer;
+    display: none;
+
+}
+
+.copyButton:hover {
+    background: rgb(141, 151, 160);
+    transform: scale(1.02);
+}
+
+
+.Footer {
+    position: absolute;
+    width: 72%;
+    top: 90%;
+    align-items: center;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+
+}
+/*---------------------- PAGE RESPONSIVE -------------------------------------*/

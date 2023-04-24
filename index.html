@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Challenge OracleOne</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="main">
+        <div class="encryptText">
+            <textarea name="Text-Entry" class="Text-Entry" id="Text-Entry" cols="30" rows="10"
+                placeholder="Escriba Aca :)" pattern></textarea>
+        </div>
+
+        <div class="conditions">
+            <p>SOLO MINÚSCULAS Y SIN ACENTO.</p>
+        </div>
+        <div class="buttons">
+            <button class="button-encry" id="button-encry" type="button">
+                Encriptar
+            </button>
+            <button class="button-desencry" id="button-desencry" type="button">
+                Desencriptar
+            </button>
+        </div>
+        <div class="EncryText">
+            <img src="img.png" id="imga" />
+            <div class="EncryMsg">
+                <h2 id="text-tittle">Ningún mensaje fue encontrado</h2>
+                <p id="text-tittle2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+            <div class="Text_OutDiv">
+                <textarea name="Text-Out" id="Text-Out" cols="30" rows="10" class="Text-Out"></textarea>
+            </div>
+
+            <div class="buttons_2">
+                <button class="copyButton" id="button-copy" type="button">
+                    Copiar
+                </button>
+            </div>
+        </div>
+
+        <div class="Footer">
+            <p class="copyright">
+                &copy Challenge OracleOne
+                <a href="https://github.com/mariooocb">GitHub</a> Mario Cespedes
+            </p>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
